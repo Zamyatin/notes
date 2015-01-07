@@ -4,4 +4,24 @@ $(document).ready(function() {
   // when we try to bind to them
 
   // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+
+  // var request1 = $.ajax({
+  //   url: "/first",
+  //   method: "get"
+  // });
+
+  // var request2 = $.ajax({
+  //   url: "/second",
+  //   method: "get"
+  // });
+
+  // request1.done(function(response) {
+  //   console.log('first'),
+  //   $("<div />").appendTo("body").append(response);
+  // });
+
+  // request2.done(function(response) {
+  //   console.log('second'),
+  //   $("<div />").appendTo("body").append(response);
+  // });
 });
