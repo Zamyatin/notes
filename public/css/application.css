@@ -1,0 +1,11 @@
+.error {
+  color: red;
+  font-size: 135%;
+  font-style: bold;
+}
+
+.users {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
