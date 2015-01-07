@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
 
+  validates :first_name, presence: true
+
   def password=(password)
     self.hashed_password = BCrypt::Password.create(password)
   end

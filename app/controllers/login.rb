@@ -28,6 +28,21 @@ post '/sessions/end' do
   redirect '/'
 end
 
+get '/users/new' do
+  erb :'user/create_new'
+end
+
+post '/users' do
+  @user = User.new(params[:user])
+  if @user.save
+    session[:user_logged_in] = @user.id
+    redirect '/home'
+  else
+    @error_message = "WHAT THE FUCK!?!?"
+    erb :'user/create_new'
+  end
+end
+
 get '/home' do
   erb :home
 end
