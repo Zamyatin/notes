@@ -1,12 +1,13 @@
 <% if @error_message %>
   <p class="error"><%= @error_message %></p>
 <% end %>
+<div id="login">
+  <form action="/sessions" method="POST">
+    <input name="email" type="text" placeholder="Email" value="<%= params[:email] %>">
+    <input name="password" type="password" placeholder="Password">
+    <input type="submit">
+  </form>
+</div>
 
-<form action="/sessions" method="POST">
-  <input name="email" type="text" placeholder="Email" value="<%= params[:email] %>">
-  <input name="password" type="password" placeholder="Password">
-  <input type="submit">
-</form>
-
-<a href="/users/new">Don't have an account? Get one!<a>
+<div id="new_user"><a href="/users/new">Don't have an account? Get one!<a></div>
 

@@ -3,9 +3,9 @@
 <% end %>
 
 <form action="/users" method="POST">
-  <input name="user[first_name]" type="text" placeholder="First Name" value="<%= params[:first_name] %>">
-  <input name="user[last_name]" type="text" placeholder="Last Name" value="<%= params[:last_name] %>">
-  <input name="user[email]" type="text" placeholder="Email" value="<%= params[:email] %>">
-  <input name="user[password]" type="password" placeholder="Password" value="">
+  <input name="user[first_name]" type="text" placeholder="First Name" value="<%= params[:first_name] %>"><br>
+  <input name="user[last_name]" type="text" placeholder="Last Name" value="<%= params[:last_name] %>"><br>
+  <input name="user[email]" type="text" placeholder="Email" value="<%= params[:email] %>"><br>
+  <input name="user[password]" type="password" placeholder="Password" value=""><br>
   <input type="submit">
 </form>
